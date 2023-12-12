@@ -1,0 +1,164 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+// Variables
+$black42:#424241;
+$gray9E:#9E9D9B;
+$grayDE:#DEDAD5;
+$grayFA:#FAF8F5;
+
+// Mixins
+@mixin button{
+    background-color: $black42;
+    color: $grayFA;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 14px 22.5px;
+}
+
+// General
+*{
+    font-family: 'Poppins', sans-serif;
+    color: $black42;
+}
+a{
+    text-decoration: none;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+
+// Classes
+.button{
+    @include button;
+    &--transparent{
+        background-color:transparent;
+        color:$black42;
+        padding: 0;
+    }
+}
+
+.container{
+    max-width: 1920px;
+    max-height: 1080px;
+    padding: 33px 160px 67px 158px;
+    position: relative;
+    &::before{
+        content: '';
+        position: absolute;
+        right: 0;
+        top: 0;
+        background-color: $grayDE;
+        width: 48.5%;
+        height: 100%;
+        z-index: -1;
+    }
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu{
+    display: flex;
+    gap: 56px;
+    margin-right: auto;
+    margin-left: 311px;
+    &__item{
+        opacity: 50%;
+        &--marked{
+            opacity: 100%;
+        }
+    }
+}
+
+.hero{
+    background-image: url(img/img1.png), url(img/img2.png);
+    background-repeat: no-repeat;
+    background-position: 53% , right;
+    background-size: 450px;
+    padding-bottom: 194px;
+}
+
+.text{
+    &__title{
+        font-family: 'Playfair Display', serif;
+        font-size: 80px;
+        font-weight: 400;
+        width: 804px;
+        margin: 0;
+        margin-top: 95px;
+    }
+    &__subtitle{
+        font-size: 24px;
+        font-weight: 400;
+        opacity: 50%;
+        width: 803px;
+        margin: 0;
+        margin-top: 32px;
+        margin-bottom: 56px;
+    }
+}
+
+.buttons{
+    display: flex;
+    gap: 32px;
+}
+
+.features{
+    display: flex;
+    gap: 96px;
+}
+
+.feature{
+    width: 107px;
+    &__number{
+        font-size: 64px;
+        font-weight: 500;
+        margin: 0;
+    }
+    &__text{
+        color: $gray9E;
+        font-size: 18px;
+        margin: 0;
+    }
+}
+
+.services{
+    background-color: $grayFA;
+    position: absolute;
+    right: 173px;
+    bottom: 42px;
+    width: 360px;
+    padding: 32px;
+    &__text{
+        font-size: 18px;
+        margin: 0;
+        margin-bottom: 24px;
+    }
+}
+
+.service{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &__number{
+        color: $gray9E;
+        font-size: 18px;
+    }
+    &__text{
+        margin-right: auto;
+        margin-left: 24px;
+        font-size: 24px;
+    }
+    &--border{
+        border-top: 1px solid $grayDE;
+        border-bottom: 1px solid $grayDE;
+    }
+}

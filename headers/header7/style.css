@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+* {
+  font-family: "Poppins", sans-serif;
+  color: #424241;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.button {
+  background-color: #424241;
+  color: #FAF8F5;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 14px 22.5px;
+}
+.button--transparent {
+  background-color: transparent;
+  color: #424241;
+  padding: 0;
+}
+
+.container {
+  max-width: 1920px;
+  max-height: 1080px;
+  padding: 33px 160px 67px 158px;
+  position: relative;
+}
+.container::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 0;
+  background-color: #DEDAD5;
+  width: 48.5%;
+  height: 100%;
+  z-index: -1;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu {
+  display: flex;
+  gap: 56px;
+  margin-right: auto;
+  margin-left: 311px;
+}
+.menu__item {
+  opacity: 50%;
+}
+.menu__item--marked {
+  opacity: 100%;
+}
+
+.hero {
+  background-image: url(img/img1.png), url(img/img2.png);
+  background-repeat: no-repeat;
+  background-position: 53%, right;
+  background-size: 450px;
+  padding-bottom: 194px;
+}
+
+.text__title {
+  font-family: "Playfair Display", serif;
+  font-size: 80px;
+  font-weight: 400;
+  width: 804px;
+  margin: 0;
+  margin-top: 95px;
+}
+.text__subtitle {
+  font-size: 24px;
+  font-weight: 400;
+  opacity: 50%;
+  width: 803px;
+  margin: 0;
+  margin-top: 32px;
+  margin-bottom: 56px;
+}
+
+.buttons {
+  display: flex;
+  gap: 32px;
+}
+
+.features {
+  display: flex;
+  gap: 96px;
+}
+
+.feature {
+  width: 107px;
+}
+.feature__number {
+  font-size: 64px;
+  font-weight: 500;
+  margin: 0;
+}
+.feature__text {
+  color: #9E9D9B;
+  font-size: 18px;
+  margin: 0;
+}
+
+.services {
+  background-color: #FAF8F5;
+  position: absolute;
+  right: 173px;
+  bottom: 42px;
+  width: 360px;
+  padding: 32px;
+}
+.services__text {
+  font-size: 18px;
+  margin: 0;
+  margin-bottom: 24px;
+}
+
+.service {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.service__number {
+  color: #9E9D9B;
+  font-size: 18px;
+}
+.service__text {
+  margin-right: auto;
+  margin-left: 24px;
+  font-size: 24px;
+}
+.service--border {
+  border-top: 1px solid #DEDAD5;
+  border-bottom: 1px solid #DEDAD5;
+}/*# sourceMappingURL=style.css.map */

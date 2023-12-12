@@ -1,0 +1,183 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quattrocento&display=swap');
+
+// Variables
+$beigeCA:#CAC6BB;
+$black30:#303030;
+$gray90:#909090;
+$grayC4:#C4C4C4;
+$whiteF6:#F6F6F6;
+
+// General
+*{
+    font-family: 'Quattrocento', serif;
+    color: $gray90;
+    font-size: 18px;
+}
+a{
+    text-decoration: none;
+}
+body{
+    padding: 0;
+    margin: 0;
+}
+
+// Classes
+.title{
+    font-family: 'Oswald', sans-serif;
+    color: $black30;
+    font-weight: 500;
+    font-size: 32px;
+}
+
+.button{
+    font-family: 'Quattrocento', serif;
+    font-size: 24px;
+    background-color: $black30;
+    color: $whiteF6;
+    padding: 17px 36px;
+}
+
+.container{
+    max-width: 1920px;
+    max-height: 1080px;
+    margin: auto;
+    padding: 33px 160px 0;
+    background-color: rgba($color: $grayC4, $alpha: .15);
+    background-image: url(img/background.svg);
+    background-repeat: no-repeat;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &__logo{
+        margin-right: 20%;
+    }
+    &__social{
+        display: flex;
+        gap: 32px;
+    }
+}
+
+.menu{
+    display: flex;
+    align-items: center;
+    gap: 56px;
+    padding: 8px;
+    position: relative;
+    &::before{
+        content: '';
+        position: absolute;
+        bottom: 0;
+        background-color: $beigeCA;
+        height: 4px;
+        width: 32px;
+    }
+    &__item{
+        color: $black30;
+    }
+}
+
+.main{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-bottom: 113px;
+}
+
+.services{
+    width: 294px;
+}
+.service{
+    &__title{
+        display: flex;
+        gap: 16px;
+        box-shadow: 0px 720px 50px 0px rgba($color: #000000, $alpha: 0.1);
+    }
+    &__item{
+        font-size: 18px;
+        font-weight: 500;
+    }
+    &__img{
+        padding: 4px 12px;
+        background-color: white;
+    }
+    &__text{
+        font-family: 'Quattrocento', serif;
+    }
+}
+
+.hero{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    position: relative;
+    &__title{
+        margin: 0;
+        width: max-content;
+        font-size: 96px;
+        position: relative;
+        text-shadow: 0px 24px 50px 0px rgba($color: #000000, $alpha: 0.1);
+        &::before{
+            content: '';
+            position: absolute;
+            bottom: 0;
+            background-color: $beigeCA;
+            height: 4px;
+            width: 80px;
+        }
+    }
+    &__img{
+        position: relative;
+        box-shadow: 0px 720px 50px 0px rgba($color: #000000, $alpha: 0.1);
+        width: 100%;
+        height: auto;
+    }
+    &::before {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 5.5%;
+        background-color: $beigeCA;
+        width: 90%;
+        height: 62%;
+        box-sizing: border-box;
+        border-radius: 5% 5% 0 0;
+    }
+    &::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 1%;
+        border: 1px solid $beigeCA;
+        border-bottom: 0px;
+        width: 98%;
+        height: 65%;
+        box-sizing: border-box;
+        border-radius: 5% 5% 0 0;
+        z-index: -1;
+    }
+}
+
+.whoami{
+    width: 408px;
+    &__text{
+        line-height: 32px;
+        margin-bottom: 48px;
+    }
+}
+
+.features{
+    display: flex;
+    gap: 32px;
+    margin-top: 73px;
+}
+
+.feature{
+    &__title{
+        margin: 0;
+    }
+}

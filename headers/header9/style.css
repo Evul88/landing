@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather&family=Poppins&display=swap");
+* {
+  font-family: "Poppins", sans-serif;
+  color: white;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1920px;
+  max-height: 1080px;
+  padding: 33px 160px;
+  background-color: #2B2D38;
+  background-image: url(img/background.svg), url(img/background.svg);
+  background-position: right bottom -75px, right bottom -100px;
+  background-size: 49.5%, 35.5%;
+  background-repeat: no-repeat;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  background-color: #DB2A6B;
+  padding: 17px 69px;
+  border-radius: 16px 16px 16px 0;
+}
+.button--transparent {
+  background-color: transparent;
+  text-decoration: underline;
+  padding: 0;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  gap: 48px;
+  padding: 8px;
+  position: relative;
+}
+.menu::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  background-color: #DB2A6B;
+  height: 4px;
+  width: 32px;
+}
+
+.main {
+  display: flex;
+  margin-top: 134px;
+}
+
+.hero {
+  width: 784px;
+}
+.hero__title {
+  font-family: "Merriweather", serif;
+  font-size: 80px;
+  font-weight: 700;
+  margin: 0;
+}
+.hero__subtitle {
+  width: 648px;
+  font-size: 24px;
+  font-weight: 400;
+  opacity: 50%;
+  margin-top: 24px;
+  margin-bottom: 32px;
+}
+
+.buttons {
+  margin: 0;
+  display: flex;
+  gap: 32px;
+}
+
+.features {
+  margin-top: 144px;
+  display: flex;
+  gap: 48px;
+}
+
+.feature {
+  display: flex;
+  gap: 16px;
+  width: 190px;
+}
+
+.images {
+  display: grid;
+  grid-template-columns: repeat(3, min-content);
+  grid-template-rows: repeat(3, min-content);
+  gap: 32px;
+  align-items: center;
+  position: relative;
+}
+.images__item--1 {
+  background-color: #6E1FED;
+  border-radius: 90px;
+  grid-column: 1;
+  grid-row: 1/span 2;
+}
+.images__item--2 {
+  background-color: #DB2A6B;
+  border-radius: 90px;
+  grid-column: 1;
+  grid-row: 3;
+}
+.images__item--3 {
+  background-color: #60D3D9;
+  border-radius: 90px;
+  grid-column: 2;
+  grid-row: 1;
+}
+.images__item--4 {
+  background-color: #FF7E29;
+  border-radius: 90px;
+  grid-column: 2;
+  grid-row: 2/span 2;
+}
+.images__item--5 {
+  background-color: #F4B840;
+  border-radius: 90px;
+  grid-column: 3;
+  grid-row: 1/span 3;
+}/*# sourceMappingURL=style.css.map */

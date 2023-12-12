@@ -1,0 +1,141 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@font-face {
+    font-family: 'GT Walsheim Pro';
+    src: url(fonts/GT-Walsheim-Pro/GT-Walsheim-Regular.otf);
+}
+@font-face {
+    font-family: 'Value Serif Pro';
+    src: url(fonts/Value-Serif-Pro-Regular/Value-Serif-Pro-Regular.ttf);
+}
+
+// Variables
+$black1A:#1A1A1A;
+$greenEA:#EAF586;
+$greenEC:#ECF494;
+$greenFA:#FAF5DD;
+
+// Mixins
+@mixin button{
+    font-family: 'Poppins', sans-serif;
+    background-color: $black1A;
+    color: white;
+    padding: 12px 28px;
+    border-radius: 8px;
+}
+
+// General
+*{
+    font-family: 'GT Walsheim Pro', serif;
+    color: $black1A;
+}
+a{
+    text-decoration: none;
+}
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+// Classes
+.container{
+    max-width: 1440px;
+    max-height: 1080px;
+}
+
+.button{
+    @include button;
+    &--modified{
+        color: $greenEA;
+    }
+}
+
+.title{
+    font-family: 'Value Serif Pro', serif;
+}
+
+.rated{
+    background-color: $greenEC;
+    text-align: center;
+    margin: 0;
+    padding: 16px;
+    &__text{
+        margin: 0;
+        font-weight: 300;
+        font-size: 14px;
+    }
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 60px;
+}
+
+.menu{
+    display: flex;
+    align-items: center;
+    gap: 48px;
+}
+
+.buttons{
+    display: flex;
+    align-items: center;
+    &__item{
+        font-size: 18px;
+        font-weight: 500;
+    }
+}
+
+.main{
+    background-color: rgba($color: $greenEA, $alpha: .25);
+}
+
+.hero{
+    display: flex;
+    align-items: center;
+    height: 587px;
+    background-image: url(img/hero1.png), url(img/hero2.png);
+    background-repeat: no-repeat;
+    background-position: top right 400px, right;
+}
+
+.hero-text{
+    padding: 0px 60px;
+    &__title{
+        font-size: 64px;
+        font-weight: 700;
+        width: 626px;
+        letter-spacing: 1px;
+    }
+}
+
+.featured{
+    padding: 48px 60px 83px;
+    display: flex;
+    gap: 72px;
+}
+
+.feature{
+    display: flex;
+    align-items: start;
+    gap: 18px;
+}
+
+.featured-text{
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    &__title{
+        font-size: 24px;
+        margin: 0;
+    }
+    &__subtitle{
+        color: rgba($color: $black1A, $alpha: .6);
+        font-size: 16px;
+        margin: 0;
+    }
+}

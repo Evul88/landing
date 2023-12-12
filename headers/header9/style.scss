@@ -1,0 +1,158 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Poppins&display=swap');
+
+// Variables
+$grayAB:#ABABAB;
+$pinkDB:#DB2A6B;
+$black2B:#2B2D38;
+$purple6E:#6E1FED;
+$cyan60:#60D3D9;
+$orangeFF:#FF7E29;
+$yellowF4:#F4B840;
+
+// Mixins
+@mixin button{
+    display: flex;
+    align-items: center;
+    background-color: $pinkDB;
+    padding: 17px 69px;
+    border-radius: 16px 16px 16px 0;
+}
+
+@mixin img($bgcolor){
+    background-color: $bgcolor;
+    border-radius: 90px;
+}
+
+// General
+*{
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+a{
+    text-decoration: none;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+
+// Classes
+.container{
+    max-width: 1920px;
+    max-height: 1080px;
+    padding: 33px 160px;
+    background-color: $black2B;
+    background-image: url(img/background.svg), url(img/background.svg);
+    background-position: right bottom -75px, right bottom -100px;
+    background-size:49.5%, 35.5%;
+    background-repeat: no-repeat;
+}
+
+.button{
+    @include button;
+    &--transparent{
+        background-color: transparent;
+        text-decoration: underline;
+        padding: 0;
+    }
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu{
+    display: flex;
+    align-items: center;
+    gap: 48px;
+    padding: 8px;
+    position: relative;
+    &::before{
+        content: '';
+        position: absolute;
+        bottom: 0;
+        background-color: $pinkDB;
+        height: 4px;
+        width: 32px;
+    }
+}
+
+.main{
+    display: flex;
+    margin-top: 134px;
+}
+
+.hero{
+    width: 784px;
+    &__title{
+        font-family: 'Merriweather', serif;
+        font-size: 80px;
+        font-weight: 700;
+        margin: 0;
+    }
+    &__subtitle{
+        width: 648px;
+        font-size: 24px;
+        font-weight: 400;
+        opacity: 50%;
+        margin-top: 24px;
+        margin-bottom: 32px;
+    }
+}
+
+.buttons{
+    margin: 0;
+    display: flex;
+    gap: 32px;
+}
+
+.features{
+    margin-top: 144px;
+    display: flex;
+    gap: 48px;
+}
+
+.feature{
+    display: flex;
+    gap: 16px;
+    width: 190px;
+}
+
+.images{
+    display: grid;
+    grid-template-columns: repeat(3, min-content);
+    grid-template-rows: repeat(3, min-content);
+    gap: 32px;
+    align-items: center;
+    position: relative;
+    &__item{
+        &--1{
+            @include img($purple6E);
+            grid-column: 1;
+            grid-row: 1 / span 2;
+        }
+        &--2{
+            @include img($pinkDB);
+            grid-column: 1;
+            grid-row: 3;
+        }
+        &--3{
+            @include img($cyan60);
+            grid-column: 2;
+            grid-row: 1;
+        }
+        &--4{
+            @include img($orangeFF);
+            grid-column: 2;
+            grid-row: 2 / span 2;
+        }
+        &--5{
+            @include img($yellowF4);
+            grid-column: 3;
+            grid-row: 1 / span 3;
+        }
+    }
+}
