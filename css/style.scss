@@ -31,7 +31,7 @@ body{
 .header{
     display: flex;
     justify-content: center;
-    padding: 24px;
+    padding: 5px 24px;
     background-color: #101010;
 }
 
@@ -76,7 +76,8 @@ body{
 .footer{
     display: flex;
     justify-content: space-between;
-    padding: 24px;
+    align-items: center;
+    padding: 5px 24px;
     background-color: #101010;
     &__copyright{
         font-size: 18px;
