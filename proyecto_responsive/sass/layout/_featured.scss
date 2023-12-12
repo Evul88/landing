@@ -1,0 +1,12 @@
+.featured{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 46px 0px;
+    width: 327px;
+    @include breakpoint(tablet){
+        margin-top: 100px;
+        align-self: flex-start;
+    }
+}

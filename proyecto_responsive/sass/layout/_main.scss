@@ -1,0 +1,10 @@
+.main{
+    background: linear-gradient($white, $shadow-white);
+    padding: 0px 16px;
+    @include breakpoint(tablet){
+        padding: 0px 40px;
+    }
+    @include breakpoint(desktop){
+        padding: 0px 165px;
+    }
+}

@@ -1,0 +1,37 @@
+.button{
+    @include text($weight: $bold,$size: 18px, $lineHeight: 28px);
+    text-decoration: none;
+    display: inline;
+    width: max-content;
+    background: $dark-blue;
+    color: $white;
+    padding: 14px 32px;
+    border-radius: 50px;
+    &:hover{
+        background: $blue;
+    }
+    &--2{
+        background: $fade-orange-purple;
+        &:hover{
+            background: $fade-orange-purple;
+            opacity: 50%;
+        }
+    }
+    &--3{
+        background: $fade-blue-purple;
+        &:hover{
+            background: $fade-blue-purple;
+            opacity: 50%;
+        }
+    }
+    &--transparent{
+        background: transparent;
+        color: $dark-pink;
+        padding: 0;
+        border-radius: 0px;
+        &:hover {
+            background: transparent;
+            opacity: 50%;
+        }
+    }
+}

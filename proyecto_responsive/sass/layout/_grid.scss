@@ -1,0 +1,13 @@
+.grid{
+    display: grid;
+    gap: 40px;
+    padding-top: 14px;
+    padding-bottom: 80px;
+    @include breakpoint(tablet){
+        grid-template-columns: repeat(2, 1fr);
+        margin-top: 80px;
+    }
+    @include breakpoint(desktop){
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

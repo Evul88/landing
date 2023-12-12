@@ -1,0 +1,28 @@
+//Heading Text
+.heading-text{
+    &-XL{
+        @include text($weight: $extrabold, $size: 56px, $lineHeight: 70px);
+    }
+    &-L{
+        @include text($weight: $extrabold, $size: 40px, $lineHeight: 51px);
+    }
+    &-M{
+        @include text($weight: $extrabold, $size: 32px, $lineHeight: 40px);
+    }
+    &-S{
+        @include text($weight: $extrabold, $size: 24px, $lineHeight: 28px);
+        &--white{
+            @include text($weight: $extrabold, $size: 24px, $lineHeight: 28px, $color: $white);
+        }
+    }
+}
+
+//Body Text
+.body-text{
+    &-M{
+        @include text($weight: $medium, $size: 16px, $lineHeight: 28px, $color: $blue);
+    }
+    &-S{
+        @include text($weight: $bold, $size: 16px, $lineHeight: 28px,  $color: $blue);
+    }
+}

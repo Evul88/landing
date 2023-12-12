@@ -1,0 +1,21 @@
+.item{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    position: relative;
+    &-text{
+        background-color: $white;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 24px;
+        padding: 50px 28px 32px;
+        border-radius: 10px;
+        height: 100%;
+        &-container{
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+    }
+}

@@ -1,0 +1,12 @@
+.image{
+    @include breakpoint(desktop){
+        &:hover ~ .feature{
+            transition: opacity .5s ease;
+            opacity: 1;
+        }
+        &:not(:hover) ~ .feature{
+            transition: opacity .5s ease;
+            opacity: 0;
+        }
+    }
+}

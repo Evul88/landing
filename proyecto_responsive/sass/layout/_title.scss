@@ -1,0 +1,9 @@
+.title{
+    width: 348px;
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    @include breakpoint(tablet){
+        width: 398px;
+    }
+}

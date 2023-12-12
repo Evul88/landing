@@ -1,0 +1,74 @@
+.image{
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row: 1fr;
+    align-items: start;
+    height: 239px;
+    width: 237px;
+    z-index: 1;
+    &__small{
+        border-radius: 100%;
+        grid-column: 1;
+        grid-row: 1;
+        @include breakpoint(tablet){
+            visibility: hidden;
+        }
+        @include breakpoint(desktop){
+            visibility: hidden;
+        }
+    }
+    &__normal{
+        border-radius: 500px;;
+        grid-column: 1;
+        grid-row: 1;
+        @include breakpoint(mobile){
+            visibility: hidden;
+        }
+        @include breakpoint(tablet){
+            visibility: visible;
+        }
+    }
+    &::before{
+        content: '';
+        background: $fade-orange-purple;
+        position: absolute;
+        bottom: 4px;
+        width: 100%;
+        height: 100%;
+        border-radius: 100%;
+        z-index: -1;
+        @include breakpoint(tablet){
+            height: 415px;
+            border-radius: 500px;
+            bottom: -120px;
+        }
+    }
+    
+    @include breakpoint(tablet){
+        &::after{
+            content: '';
+            background: $fade-blue-purple;
+            position: absolute;
+            left: 145px;
+            top: -148px;
+            width: 216px;
+            height: 500px;
+            z-index: -2;
+            transform: rotate(45deg);
+        }
+    }
+    @include breakpoint(desktop){
+        &::after{
+            content: '';
+            background: $fade-blue-purple;
+            position: absolute;
+            left: 300px;
+            top: -495px;
+            width: 216px;
+            height: 900px;
+            z-index: -2;
+            transform: rotate(45deg);
+        }
+    }
+}
