@@ -1,0 +1,146 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Playfair+Display:wght@500&family=Poppins&display=swap');
+
+// General
+*{
+    font-family: "Poppins",sans-serif;
+    color: #424241;
+}
+
+html {
+    padding: 0 95px;
+}
+
+body {
+    background-image: url(img/hero.png);
+    background-position: top right;
+    background-repeat: no-repeat;
+}
+
+a{
+    text-decoration: none;
+}
+
+// Header
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    // Logo
+    &__logo{
+        font-weight: 600;
+        font-size: 36px;
+    }
+
+    // Menu
+    &__menu{
+        display: flex;
+        gap: 56px;
+        font-size: 18px;
+    }
+}
+
+// Main
+.main{
+    
+    // Hero
+    &__hero{
+        margin-top: 80px;
+        margin-bottom: 64px;
+
+        // Title
+        &__title{
+            font-family: "Bebas Neue",sans-serif;
+            font-size: 120px;
+            line-height: 120px;
+            width: 800px;
+            margin: 0;
+
+            // Highlights
+            &--highlight{
+                font-family: "Bebas Neue",sans-serif;
+                color: #7EDAD2;
+            }
+        }
+
+        // Text
+        &__text{
+            color: #909090;
+            font-size: 24px;
+            line-height: 40px;
+            width: 700px;
+        }
+
+        // Button
+        &__button{
+            background-color: #7EDAD2;
+            color: #FAFAFA;
+            padding: 15px 32px;
+            font-size: 18px;
+            line-height: 27px;
+        }
+
+        // Achievements
+        &__achievements{
+            display: flex;
+            gap: 80px;
+            text-align: center;
+
+            // Container
+            &__container{
+
+                // Number
+                &__number{
+                    font-family: "Bebas Neue",sans-serif;
+                    font-size: 48px;
+                    line-height: 57.6px;
+                    margin-bottom: 0;
+                }
+
+                // Text
+                &__text{
+                    margin-top: 0;
+                    color: #909090;
+                    font-size: 18px;
+                    line-height: 27px;
+                }
+            }
+        }
+    }
+
+    // Plans
+    &__plans{
+        display: flex;
+        gap: 32px;
+        height: 200px;
+
+        // Container
+        &__container{
+            background-color: #FAFAFA;
+            padding: 32px;
+            width: 300px;
+            // Icon
+            &__icon{
+                width: 64px;
+                height: 64px;
+                margin: 0;
+            }
+
+            // Title
+            &__title{
+                margin: 0;
+                color: #424241;
+                font-size: 24px;
+            }
+
+            // Text
+            &__text{
+                margin: 0;
+                color: #909090;
+                font-size: 18px;
+            }
+        }
+    }
+}

@@ -1,0 +1,198 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+* {
+  font-family: "Poppins", sans-serif;
+  color: #403C39;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  padding: 33px 160px;
+}
+
+.button {
+  background-color: #F38160;
+  border-radius: 16px;
+  padding: 16.5px 40.5px;
+  color: #FAFAFA;
+}
+.button--store {
+  position: relative;
+  background-color: transparent;
+  padding: 0;
+  height: 32px;
+}
+.button--transparent {
+  background-color: transparent;
+  color: #F38160;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.menu {
+  display: flex;
+  gap: 56px;
+  margin-left: auto;
+  margin-right: 140px;
+}
+.menu__active {
+  color: #F38160;
+  position: relative;
+}
+.menu__active::before {
+  content: "";
+  position: absolute;
+  left: 3px;
+  bottom: 0;
+  background-color: #F38160;
+  width: 40px;
+  height: 2px;
+  border-radius: 8px;
+}
+
+.login {
+  display: flex;
+  align-items: center;
+}
+.login__notification {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+}
+
+.main {
+  position: relative;
+}
+.main__backSquare {
+  z-index: -1;
+  position: absolute;
+  top: 20%;
+  right: 25%;
+  width: 396.65px;
+  height: 436.86px;
+  border: 1px solid #F0B70D;
+  rotate: 15deg;
+  border-radius: 7%;
+}
+.main__backSquare--orange {
+  top: 33%;
+  right: 20.5%;
+  width: 324.6px;
+  height: 357.5px;
+  border: 1px solid #F38160;
+  rotate: 45deg;
+}
+
+.hero {
+  background-image: url(img/hero.png);
+  background-repeat: no-repeat;
+  background-position: top 0px right 40px;
+  height: 700px;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 762px;
+}
+.text__title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 80px;
+  margin: 0;
+  margin-top: 78px;
+}
+.text__title--highlighted {
+  color: #F38160;
+}
+.text__subtitle {
+  font-size: 24px;
+  font-weight: 400;
+  width: 648px;
+  margin: 0;
+}
+
+.search {
+  margin-top: 48px;
+  display: flex;
+  position: relative;
+}
+.search__bar {
+  background-color: rgba(208, 208, 210, 0.25);
+  color: #949494;
+  font-size: 18px;
+  width: 512px;
+  padding: 17px 32px;
+  border: 0;
+  border-radius: 8px 0 0 8px;
+}
+.search__submit {
+  background-color: #F38160;
+  border: 0;
+  border-radius: 0 8px 8px 0;
+  width: 60px;
+  height: 60px;
+}
+.search__icon {
+  position: absolute;
+  top: 33%;
+  left: 39%;
+}
+
+.list {
+  width: 420px;
+  margin-top: 40px;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 16px 32px;
+}
+.list__item {
+  display: flex;
+  align-content: center;
+  gap: 10px;
+  color: #949494;
+  font-size: 18px;
+}
+.list__item::before {
+  content: "";
+  background-image: url(img/check.svg);
+  background-repeat: no-repeat;
+  width: 24px;
+  height: 27px;
+}
+
+.products {
+  display: flex;
+  align-content: center;
+  gap: 24px;
+  padding: 24px;
+}
+
+.product {
+  background-color: white;
+  width: 300px;
+}
+.product__img {
+  margin-bottom: 24px;
+}
+.product__title {
+  font-size: 24px;
+  font-weight: 500;
+  margin-top: 0;
+  margin-bottom: 8px;
+}
+.product__subtitle {
+  color: #909090;
+  font-size: 18px;
+  margin: 0;
+}/*# sourceMappingURL=style.css.map */
