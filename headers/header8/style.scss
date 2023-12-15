@@ -13,14 +13,19 @@ $whiteF6:#F6F6F6;
 *{
     font-family: 'Quattrocento', serif;
     color: $gray90;
-    font-size: 18px;
+    font-size: 14px;
 }
 a{
     text-decoration: none;
 }
+html{
+    padding: 0;
+    margin: 0;
+}
 body{
     padding: 0;
     margin: 0;
+    width: max-content;
 }
 
 // Classes
@@ -28,53 +33,50 @@ body{
     font-family: 'Oswald', sans-serif;
     color: $black30;
     font-weight: 500;
-    font-size: 32px;
+    font-size: 26px;
 }
 
 .button{
     font-family: 'Quattrocento', serif;
-    font-size: 24px;
+    font-size: 18px;
     background-color: $black30;
     color: $whiteF6;
-    padding: 17px 36px;
+    padding: 15px 28px;
 }
 
 .container{
-    max-width: 1920px;
-    max-height: 1080px;
-    margin: auto;
-    padding: 33px 160px 0;
+    max-width: 1200px;
     background-color: rgba($color: $grayC4, $alpha: .15);
     background-image: url(img/background.svg);
     background-repeat: no-repeat;
 }
 
 .header{
+    padding: 33px 60px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     &__logo{
-        margin-right: 20%;
+        margin-right: 15%;
     }
     &__social{
         display: flex;
-        gap: 32px;
+        gap: 24px;
     }
 }
 
 .menu{
     display: flex;
     align-items: center;
-    gap: 56px;
-    padding: 8px;
+    gap: 40px;
     position: relative;
     &::before{
         content: '';
         position: absolute;
-        bottom: 0;
+        bottom: -10px;
         background-color: $beigeCA;
         height: 4px;
-        width: 32px;
+        width: 8%;
     }
     &__item{
         color: $black30;
@@ -82,27 +84,30 @@ body{
 }
 
 .main{
+    padding: 0px 60px;
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
-    padding-bottom: 113px;
+    padding-bottom: 6%;
 }
 
 .services{
-    width: 294px;
+    width: 20%;
 }
 .service{
     &__title{
         display: flex;
+        align-items: center;
         gap: 16px;
-        box-shadow: 0px 720px 50px 0px rgba($color: #000000, $alpha: 0.1);
     }
     &__item{
         font-size: 18px;
         font-weight: 500;
     }
     &__img{
-        padding: 4px 12px;
+        width: 30px;
+        height: 30px;
+        padding: 4% 4%;
         background-color: white;
     }
     &__text{
@@ -113,36 +118,34 @@ body{
 .hero{
     display: flex;
     flex-direction: column;
-    gap: 24px;
+    align-items: center;
+    gap: 18px;
     position: relative;
     &__title{
+        text-align: center;
         margin: 0;
-        width: max-content;
-        font-size: 96px;
+        font-size: 80px;
         position: relative;
-        text-shadow: 0px 24px 50px 0px rgba($color: #000000, $alpha: 0.1);
         &::before{
             content: '';
             position: absolute;
             bottom: 0;
             background-color: $beigeCA;
             height: 4px;
-            width: 80px;
+            width: 12.5%;
         }
     }
     &__img{
+        width: 75%;
         position: relative;
-        box-shadow: 0px 720px 50px 0px rgba($color: #000000, $alpha: 0.1);
-        width: 100%;
-        height: auto;
     }
     &::before {
         content: '';
         position: absolute;
         bottom: 0;
-        left: 5.5%;
+        left: 10%;
         background-color: $beigeCA;
-        width: 90%;
+        width: 80%;
         height: 62%;
         box-sizing: border-box;
         border-radius: 5% 5% 0 0;
@@ -151,10 +154,10 @@ body{
         content: '';
         position: absolute;
         bottom: 0;
-        left: 1%;
+        left: 5.5%;
         border: 1px solid $beigeCA;
         border-bottom: 0px;
-        width: 98%;
+        width: 89%;
         height: 65%;
         box-sizing: border-box;
         border-radius: 5% 5% 0 0;
@@ -163,9 +166,8 @@ body{
 }
 
 .whoami{
-    width: 408px;
+    width: 26.5%;
     &__text{
-        line-height: 32px;
         margin-bottom: 48px;
     }
 }
@@ -173,11 +175,14 @@ body{
 .features{
     display: flex;
     gap: 32px;
-    margin-top: 73px;
+    margin-top: 25%;
 }
 
 .feature{
     &__title{
+        margin: 0;
+    }
+    &__text{
         margin: 0;
     }
 }

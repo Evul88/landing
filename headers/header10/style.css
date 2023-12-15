@@ -16,24 +16,28 @@ a {
   text-decoration: none;
 }
 
+html {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   margin: 0;
   padding: 0;
-  display: flex;
-  justify-content: center;
 }
 
 .container {
-  max-width: 1440px;
-  max-height: 1080px;
+  max-width: 1200px;
 }
 
 .button {
   font-family: "Poppins", sans-serif;
   background-color: #1A1A1A;
   color: white;
-  padding: 12px 28px;
+  padding: 10px 20px;
   border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
 }
 .button--modified {
   color: #EAF586;
@@ -52,29 +56,30 @@ body {
 .rated__text {
   margin: 0;
   font-weight: 300;
-  font-size: 14px;
+  font-size: 12px;
 }
 
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 24px 60px;
+  padding: 18px 40px;
 }
 
 .menu {
   display: flex;
   align-items: center;
-  gap: 48px;
+  gap: 36px;
+  font-size: 18px;
 }
 
 .buttons {
   display: flex;
   align-items: center;
+  gap: 6px;
 }
-.buttons__item {
-  font-size: 18px;
-  font-weight: 500;
+.buttons__img {
+  width: 48px;
 }
 
 .main {
@@ -84,45 +89,53 @@ body {
 .hero {
   display: flex;
   align-items: center;
-  height: 587px;
+  height: 480px;
   background-image: url(img/hero1.png), url(img/hero2.png);
   background-repeat: no-repeat;
-  background-position: top right 400px, right;
+  background-position: center right 41%, center right;
+  background-size: contain;
 }
 
 .hero-text {
-  padding: 0px 60px;
+  padding: 0px 40px;
 }
 .hero-text__title {
-  font-size: 64px;
+  font-size: 56px;
   font-weight: 700;
-  width: 626px;
+  width: 50%;
   letter-spacing: 1px;
 }
 
 .featured {
-  padding: 48px 60px 83px;
+  padding: 36px 0px 42px 40px;
   display: flex;
-  gap: 72px;
+  justify-content: space-between;
 }
 
 .feature {
   display: flex;
   align-items: start;
-  gap: 18px;
+  gap: 12px;
+  width: 33%;
+}
+.feature__img {
+  width: 50px;
 }
 
 .featured-text {
   display: flex;
   flex-direction: column;
-  gap: 6px;
 }
 .featured-text__title {
-  font-size: 24px;
+  font-size: 18px;
   margin: 0;
 }
 .featured-text__subtitle {
   color: rgba(26, 26, 26, 0.6);
-  font-size: 16px;
+  font-size: 14px;
   margin: 0;
+  width: 80%;
+}
+.featured-text__subtitle--larger {
+  width: 95%;
 }/*# sourceMappingURL=style.css.map */

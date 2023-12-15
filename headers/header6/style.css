@@ -16,14 +16,14 @@ body {
   background-color: #264065;
   color: white;
   border-radius: 32px;
-  padding: 16.5px 40.5px;
+  padding: 10.5px 38.5px;
   display: flex;
   align-items: center;
 }
 .button--transparent {
   background-color: transparent;
   color: #264065;
-  margin-left: 58px;
+  margin-left: 14px;
   padding: 0;
   text-decoration: underline;
 }
@@ -39,12 +39,11 @@ body {
 }
 
 .container {
-  max-width: 1920px;
-  max-height: 1080px;
+  max-width: 1200px;
   background-image: url(img/hero.png);
-  background-position: bottom right 90px;
+  background-position: bottom right -35px;
   background-repeat: no-repeat;
-  background-size: 1350px;
+  background-size: contain;
   position: relative;
 }
 .container::before {
@@ -60,11 +59,13 @@ body {
 .container::after {
   content: "";
   position: absolute;
-  right: 15%;
-  top: 49px;
-  width: 550px;
-  height: 550px;
+  right: 10%;
+  top: 10%;
+  width: 28.35%;
+  height: 66.18%;
   background-image: url(img/herobackground.png);
+  background-repeat: no-repeat;
+  background-size: contain;
   z-index: -1;
 }
 
@@ -72,13 +73,14 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 33px 160px 0;
+  font-size: 14px;
+  padding: 10px 40px;
 }
 
 .menu {
   display: flex;
   align-items: center;
-  gap: 56px;
+  gap: 32px;
 }
 .menu__item {
   display: flex;
@@ -89,26 +91,31 @@ body {
 .login {
   display: flex;
   align-items: center;
-  gap: 32px;
+  gap: 18px;
+}
+.login__icon {
+  width: 24px;
+}
+.login__icon--expandable {
+  width: 10px;
 }
 
 .main {
-  padding: 33px 160px;
-  height: 923px;
+  padding: 10px 40px;
 }
 
 .text__title {
-  width: 809px;
-  font-size: 64px;
+  width: 50%;
+  font-size: 48px;
   font-weight: 700;
   margin-bottom: 16px;
 }
 .text__subtitle {
   color: #909090;
-  width: 760px;
-  font-size: 24px;
+  width: 50%;
+  font-size: 18px;
   font-weight: 400;
-  margin-top: 16px;
+  margin-top: 18px;
   margin-bottom: 56px;
 }
 
@@ -120,36 +127,45 @@ body {
 
 .featured {
   display: flex;
-  justify-content: center;
-  gap: 72px;
+  justify-content: space-around;
+  gap: 10%;
   margin-top: 90px;
-  padding: 32px;
-  width: 643px;
+  width: 40%;
+  padding-bottom: 6%;
 }
 
 .feature {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.feature__img {
+  width: 50px;
 }
 .feature__number {
-  font-size: 36px;
+  font-size: 28px;
+  font-weight: 500;
   margin-top: 0;
-  margin-bottom: 16px;
+  margin-bottom: 0;
 }
 .feature__text {
+  text-align: center;
   color: #909090;
-  font-size: 18px;
+  font-size: 14px;
   margin: 0;
-  width: 145px;
+  width: 100%;
 }
 
 .comment {
   position: absolute;
   display: flex;
+  justify-content: center;
   flex-direction: column;
   gap: 8px;
-  width: 345px;
-  height: 187px;
-  padding: 24px;
+  width: 18.5%;
+  height: 20%;
+  padding: 18px;
   border-radius: 16px;
   background-color: rgba(255, 255, 255, 0.5);
   backdrop-filter: blur(15px);
@@ -158,22 +174,23 @@ body {
   filter: blur(10px);
 }
 .comment__img {
-  width: 32px;
+  width: 24px;
 }
 .comment__text {
-  font-size: 18px;
+  color: #070D15;
+  font-size: 14px;
   margin: 0;
 }
 .comment__name {
-  font-size: 18px;
+  font-size: 14px;
   font-weight: 700;
   margin: 0;
 }
 .comment--1 {
-  top: 49%;
-  right: 4%;
+  top: 40%;
+  right: 2%;
 }
 .comment--2 {
-  bottom: 5%;
+  bottom: 6%;
   right: 10%;
 }/*# sourceMappingURL=style.css.map */

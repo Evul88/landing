@@ -12,11 +12,11 @@ $grayFA:#FAF8F5;
 @mixin button{
     background-color: $black42;
     color: $grayFA;
-    font-size: 18px;
+    font-size: 14px;
     display: flex;
     align-items: center;
     gap: 8px;
-    padding: 14px 22.5px;
+    padding: 9px 10px;
 }
 
 // General
@@ -40,12 +40,16 @@ body{
         color:$black42;
         padding: 0;
     }
+    &__arrow{
+        width: 20px;
+    }
+    &__expandable{
+        width: 20px;
+    }
 }
 
 .container{
-    max-width: 1920px;
-    max-height: 1080px;
-    padding: 33px 160px 67px 158px;
+    max-width: 1200px;
     position: relative;
     &::before{
         content: '';
@@ -63,13 +67,14 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 10px 30px;
 }
 
 .menu{
     display: flex;
-    gap: 56px;
-    margin-right: auto;
-    margin-left: 311px;
+    gap: 42px;
+    margin-left: auto;
+    margin-right: 23.55%;
     &__item{
         opacity: 50%;
         &--marked{
@@ -78,28 +83,33 @@ body{
     }
 }
 
+.main{
+    padding: 10px 30px 60px;
+}
+
 .hero{
     background-image: url(img/img1.png), url(img/img2.png);
     background-repeat: no-repeat;
-    background-position: 53% , right;
-    background-size: 450px;
-    padding-bottom: 194px;
+    background-position:top center, top right;
+    background-size: 31.5%;
+    padding-bottom: 14%;
+    margin-top: 50px;
 }
 
 .text{
     &__title{
         font-family: 'Playfair Display', serif;
-        font-size: 80px;
+        font-size: 52px;
         font-weight: 400;
-        width: 804px;
+        width: 50%;
         margin: 0;
-        margin-top: 95px;
+        padding-top: 1%;
     }
     &__subtitle{
-        font-size: 24px;
+        font-size: 16.75px;
         font-weight: 400;
         opacity: 50%;
-        width: 803px;
+        width: 45%;
         margin: 0;
         margin-top: 32px;
         margin-bottom: 56px;
@@ -113,32 +123,34 @@ body{
 
 .features{
     display: flex;
-    gap: 96px;
+    width: 70%;
 }
 
 .feature{
-    width: 107px;
+    width: 15.4%;
     &__number{
-        font-size: 64px;
+        font-size: 48px;
         font-weight: 500;
         margin: 0;
     }
     &__text{
         color: $gray9E;
-        font-size: 18px;
+        font-size: 14px;
         margin: 0;
+        width: 50%;
     }
 }
 
 .services{
     background-color: $grayFA;
     position: absolute;
-    right: 173px;
-    bottom: 42px;
-    width: 360px;
-    padding: 32px;
+    right: 5.5%;
+    bottom: 3.5%;
+    width: 22%;
+    padding: 12px;
+    padding-bottom: 0;
     &__text{
-        font-size: 18px;
+        font-size: 14px;
         margin: 0;
         margin-bottom: 24px;
     }
@@ -148,14 +160,17 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    &__img{
+        width: 30px;
+    }
     &__number{
         color: $gray9E;
-        font-size: 18px;
+        font-size: 14px;
     }
     &__text{
         margin-right: auto;
         margin-left: 24px;
-        font-size: 24px;
+        font-size: 18px;
     }
     &--border{
         border-top: 1px solid $grayDE;
