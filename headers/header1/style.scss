@@ -9,53 +9,64 @@
 }
 
 html {
-    padding: 0 95px;
+    padding: 0;
+    margin: 0;
 }
 
 body {
-    background-image: url(img/hero.png);
-    background-position: top right;
-    background-repeat: no-repeat;
+    padding: 0;
+    margin: 0;
 }
 
 a{
     text-decoration: none;
 }
 
-// Header
+// Container
+.container{
+    max-width: 1200px;
+    background-image: url(img/hero.png);
+    background-color: #FAFAFA;
+    background-position: top right;
+    background-repeat: no-repeat;
+    background-size: 60%;
+}
+//Header
 .header{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin: 0px 95px 0px 35px;
 
     // Logo
     &__logo{
         font-weight: 600;
-        font-size: 36px;
+        font-size: 30px;
     }
 
     // Menu
     &__menu{
         display: flex;
         gap: 56px;
-        font-size: 18px;
+        font-size: 15px;
     }
 }
 
 // Main
 .main{
-    
+    margin: 0px 35px;
     // Hero
     &__hero{
-        margin-top: 80px;
-        margin-bottom: 64px;
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
 
         // Title
         &__title{
             font-family: "Bebas Neue",sans-serif;
-            font-size: 120px;
-            line-height: 120px;
-            width: 800px;
+            font-size: 82px;
+            line-height: 80px;
+            width: 550px;
             margin: 0;
 
             // Highlights
@@ -68,9 +79,8 @@ a{
         // Text
         &__text{
             color: #909090;
-            font-size: 24px;
-            line-height: 40px;
-            width: 700px;
+            font-size: 16px;
+            width: 450px;
         }
 
         // Button
@@ -78,15 +88,16 @@ a{
             background-color: #7EDAD2;
             color: #FAFAFA;
             padding: 15px 32px;
-            font-size: 18px;
-            line-height: 27px;
+            font-size: 16px;
+            width: max-content;
         }
 
         // Achievements
         &__achievements{
             display: flex;
-            gap: 80px;
+            gap: 35px;
             text-align: center;
+            margin-bottom: 15px;
 
             // Container
             &__container{
@@ -94,8 +105,7 @@ a{
                 // Number
                 &__number{
                     font-family: "Bebas Neue",sans-serif;
-                    font-size: 48px;
-                    line-height: 57.6px;
+                    font-size: 36px;
                     margin-bottom: 0;
                 }
 
@@ -103,8 +113,7 @@ a{
                 &__text{
                     margin-top: 0;
                     color: #909090;
-                    font-size: 18px;
-                    line-height: 27px;
+                    font-size: 15px;
                 }
             }
         }
@@ -113,18 +122,16 @@ a{
     // Plans
     &__plans{
         display: flex;
-        gap: 32px;
-        height: 200px;
+        gap: 26px;
 
         // Container
         &__container{
             background-color: #FAFAFA;
-            padding: 32px;
-            width: 300px;
+            padding: 20px;
             // Icon
             &__icon{
-                width: 64px;
-                height: 64px;
+                width: 48px;
+                height: 48px;
                 margin: 0;
             }
 
@@ -132,14 +139,14 @@ a{
             &__title{
                 margin: 0;
                 color: #424241;
-                font-size: 24px;
+                font-size: 18px;
             }
 
             // Text
             &__text{
                 margin: 0;
                 color: #909090;
-                font-size: 18px;
+                font-size: 14px;
             }
         }
     }

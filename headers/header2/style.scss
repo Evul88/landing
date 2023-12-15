@@ -8,19 +8,27 @@
 }
 
 html {
-    padding: 0 95px;
+    padding: 0;
+    margin: 0;
 }
 
 body {
-    background-color: #515DEF;
-    background-image: url(img/hero.png);
-    background-position: top right;
-    background-repeat: no-repeat;
-    background-size: 45% 100vh;
+    padding: 0;
+    margin: 0;
 }
   
 a {
     text-decoration: none;
+}
+
+//Container
+.container{
+    max-width: 1200px;
+    background-color: #515DEF;
+    background-image: url(img/hero.png);
+    background-position: top right;
+    background-repeat: no-repeat;
+    background-size: 45% 100%;
 }
 
 // Header
@@ -28,11 +36,11 @@ a {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 0 55px;
 
     // Logo
     &__logo{
-        font-size: 36px;
-        line-height: 54px;
+        font-size: 28px;
         
         // Highlights
         &--highlights{
@@ -42,21 +50,19 @@ a {
 
     // Menu
     &__menu{
-        font-size: 18px;
-        line-height: 27px;
+        font-size: 12px;
         display: flex;
-        gap: 56px;
-        margin-right: 400px;
+        gap: 36px;
+        margin-right: auto;
+        margin-left: 100px;
     }
 
     // Contact
     &__contact{
-        font-size: 18px;
-        padding: 8px;
-        padding-left: 20px;
-        padding-right: 20px;
-        margin-right: 100px;
+        font-size: 14px;
+        padding: 8px 15px;
         background-color: #515DEF;
+        margin-right: 5%;
     }
 }
 
@@ -65,75 +71,72 @@ a {
 
     // Hero
     &__hero{
-
+        margin-bottom: 70px;
+        padding: 0 55px;
         // Paragraph
         &__paragraph{
-            font-size: 24px;
-            line-height: 40px;
+            font-size: 16px;
             margin-bottom: 0;
 
             // Bottom Paragraph
             &--bottom{
-                font-size: 24px;
-                line-height: 40px;
+                font-size: 16px;
                 margin-bottom: 54px;
-                width: 784px;
+                width: 584px;
             }
         }
 
         // Title
         &__title{
-            font-size: 64px;
-            line-height: 80px;
+            font-size: 45px;
             font-weight: 700;
-            width: 864px;
+            width: 600px;
             margin: 0;
         }
 
         // Button
         &__button{
-            font-size: 24px;
-            line-height: 40px;
+            display: flex;
+            align-items: center;
+            width: max-content;
+            font-size: 16px;
             color: #333333;
             background-color: #FBFBFB;
-            padding: 20px 25px;
+            padding: 10px 20px;
+            &__arrow{
+                width: 35px;
+            }
         }
     }
 
     // Services
     &__services{
         display: flex;
-        gap: 80px;
+        justify-content: space-between;
+        gap: 20px;
         background-color: #FBFBFB;
-        position: absolute;
-        left: 0;
-        bottom: 0;
-        padding: 35px 100px;
+        padding: 45px 55px;
+        width: 60%;
 
         //Container
         &__container{
-            width: 328px;
-
             // Icon
             &__icon{
-                width: 64px;
-                height: 64px;
+                width: 40px;
             }
 
             // Title
             &__title{
                 color: #333333;
-                font-size: 18px;
-                line-height: 27px;
+                font-size: 14px;
                 font-weight: 700;
-                
+                margin: 0;
             }
 
             // Text
             &__text{
                 color: #909090;
-                font-size: 18px;
-                line-height: 27px;
+                font-size: 12px;
                 margin: 0;
             }
         }
